@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Espressif native USB Serial/JTAG (ESP32-C3 / C5 / C6): VID 0x303a = 12346 -->
+    <usb-device vendor-id="12346" />
+    <!-- Silicon Labs CP210x bridge: VID 0x10c4 = 4292 -->
+    <usb-device vendor-id="4292" />
+    <!-- WCH CH340 / CH9102 bridge: VID 0x1a86 = 6790 -->
+    <usb-device vendor-id="6790" />
+</resources>

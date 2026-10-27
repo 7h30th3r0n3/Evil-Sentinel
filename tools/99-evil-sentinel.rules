@@ -1,0 +1,13 @@
+# Evil-Sentinel - serial access for the ESP32 nodes without joining the dialout group.
+# The uaccess tag lets the logged-in desktop user open the port via systemd-logind.
+#
+# Install:
+#   sudo cp 99-evil-sentinel.rules /etc/udev/rules.d/
+#   sudo udevadm control --reload && sudo udevadm trigger
+#
+# Espressif native USB Serial/JTAG (ESP32-C3 / C5 / C6)
+SUBSYSTEM=="tty", ATTRS{idVendor}=="303a", ATTRS{idProduct}=="1001", MODE="0660", GROUP="plugdev", TAG+="uaccess"
+# Silicon Labs CP210x bridge
+SUBSYSTEM=="tty", ATTRS{idVendor}=="10c4", MODE="0660", GROUP="plugdev", TAG+="uaccess"
+# WCH CH340 / CH9102 bridge
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", MODE="0660", GROUP="plugdev", TAG+="uaccess"

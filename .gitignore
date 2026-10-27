@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Capture artifacts
+*.pcap
+*.pcapng
+sentinel.pcap
+
+# Arduino / build
+build/
+*.bin
+*.elf
+*.map
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Kismet drops its log db in the working dir when you point it at the pipe/capture
+Kismet-*.kismet*

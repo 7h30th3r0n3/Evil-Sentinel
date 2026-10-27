@@ -1,0 +1,27 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- deep radial backdrop (teal core fading to near-black) -->
+    <path android:pathData="M0,0 h108 v108 h-108 z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="54"
+                android:centerY="50"
+                android:gradientRadius="74"
+                android:startColor="#FF0C2A28"
+                android:centerColor="#FF0A1C20"
+                android:endColor="#FF060A0E" />
+        </aapt:attr>
+    </path>
+
+    <!-- faint concentric radar rings -->
+    <path android:fillColor="#00000000" android:strokeColor="#1A2DE0C8" android:strokeWidth="1"
+        android:pathData="M54,54 m-40,0 a40,40 0 1,0 80,0 a40,40 0 1,0 -80,0" />
+    <path android:fillColor="#00000000" android:strokeColor="#142DE0C8" android:strokeWidth="1"
+        android:pathData="M54,54 m-28,0 a28,28 0 1,0 56,0 a28,28 0 1,0 -56,0" />
+</vector>

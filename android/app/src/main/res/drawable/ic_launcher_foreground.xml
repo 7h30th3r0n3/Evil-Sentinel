@@ -1,0 +1,35 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- hexagon ring (the sentinel body), kept inside the adaptive safe zone -->
+    <path
+        android:strokeWidth="4.5"
+        android:fillColor="#00000000"
+        android:pathData="M54,28 L76.5,41 L76.5,67 L54,80 L31.5,67 L31.5,41 Z">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="31" android:startY="28" android:endX="77" android:endY="80"
+                android:startColor="#FF39D98A" android:endColor="#FF2DE0C8" />
+        </aapt:attr>
+    </path>
+
+    <!-- six node dots on the vertices -->
+    <path android:fillColor="#FF2DE0C8" android:pathData="M54,28 m-3.4,0 a3.4,3.4 0 1,0 6.8,0 a3.4,3.4 0 1,0 -6.8,0" />
+    <path android:fillColor="#FF2DE0C8" android:pathData="M76.5,41 m-3.4,0 a3.4,3.4 0 1,0 6.8,0 a3.4,3.4 0 1,0 -6.8,0" />
+    <path android:fillColor="#FF2DE0C8" android:pathData="M76.5,67 m-3.4,0 a3.4,3.4 0 1,0 6.8,0 a3.4,3.4 0 1,0 -6.8,0" />
+    <path android:fillColor="#FF2DE0C8" android:pathData="M54,80 m-3.4,0 a3.4,3.4 0 1,0 6.8,0 a3.4,3.4 0 1,0 -6.8,0" />
+    <path android:fillColor="#FF2DE0C8" android:pathData="M31.5,67 m-3.4,0 a3.4,3.4 0 1,0 6.8,0 a3.4,3.4 0 1,0 -6.8,0" />
+    <path android:fillColor="#FF2DE0C8" android:pathData="M31.5,41 m-3.4,0 a3.4,3.4 0 1,0 6.8,0 a3.4,3.4 0 1,0 -6.8,0" />
+
+    <!-- center core -->
+    <path android:fillColor="#FF39D98A" android:pathData="M54,54 m-6.5,0 a6.5,6.5 0 1,0 13,0 a6.5,6.5 0 1,0 -13,0" />
+
+    <!-- three signal spokes from the core to the active channels -->
+    <path android:strokeColor="#CC2DE0C8" android:strokeWidth="2.2" android:fillColor="#00000000"
+        android:pathData="M54,54 L54,31 M54,54 L74,65.5 M54,54 L34,65.5" />
+</vector>
