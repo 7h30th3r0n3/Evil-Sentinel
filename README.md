@@ -11,6 +11,10 @@ Lock one ESP32 per channel, stream every node over USB, merge the streams live i
 ![Host](https://img.shields.io/badge/host-Linux%20%7C%20stdlib%20Python-success)
 ![Mode](https://img.shields.io/badge/radio-100%25%20passive-brightgreen)
 
+<img src="docs/rig.jpg" alt="Evil-Sentinel rig: M5StampC5 and ESP32-C3 nodes with antennas on a powered USB hub" width="760">
+
+<sub>A seven-node rig: three dual-band M5StampC5 and three ESP32-C3 SuperMini on one powered hub.</sub>
+
 </div>
 
 ---
@@ -28,7 +32,9 @@ Lock one ESP32 per channel, stream every node over USB, merge the streams live i
 3. **Capture.** On a computer: `./tools/sentinel.py` finds the nodes, assigns channels, and
    opens Wireshark. On Android: open the Evil-Sentinel app. That is the whole flow.
 
-![capture demo](docs/demo.gif) <!-- TODO: drop a short capture GIF here -->
+![Live dashboard: per-band histograms and per-node capture rates](docs/dashboard.png)
+
+<sub>The live controller dashboard: 2.4 and 5 GHz band histograms, per-node channel and frames/s, all merged into one Wireshark stream.</sub>
 
 ## Why
 
